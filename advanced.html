@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <a href="index.html" class="nav-link" aria-label="Back to Search">Zpátky k vyhledávání</a>
+        </nav>
+    </header>
+    <main class="search-section">
+        <h2>Pokročilé vyhledávání</h2>
+        <form action="https://www.google.com/search" method="GET" aria-label="Advanced Search Form">
+            <div class="form-group">
+                <label for="all-words">Najdi stránky <strong>se všemi slovy:</strong></label>
+                <input type="text" name="as_q" id="all-words" class="advanced-input" aria-label="All Words">
+            </div>
+            <div class="form-group">
+                <label for="exact-word">Najdi stránky <strong>s přesnými slovy:</strong></label>
+                <input type="text" name="as_epq" id="exact-word" class="advanced-input" aria-label="Exact Words">
+            </div>
+            <div class="form-group">
+                <label for="any-words">Najdi stránky <strong>obsahují slova:</strong></label>
+                <input type="text" name="as_oq" id="any-words" class="advanced-input" aria-label="Any Words">
+            </div>
+            <div class="form-group">
+                <label for="none-words">Najdi stránky <strong>které neobsahují:</strong></label>
+                <input type="text" name="as_eq" id="none-words" class="advanced-input" aria-label="Excluded Words">
+            </div>
+            <button type="submit" class="advanced-button" aria-label="Advanced Search Button">Vyhledat</button>
+        </form>
+    </main>
+</body>
+</html>

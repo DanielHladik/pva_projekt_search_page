@@ -1,0 +1,123 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+
+.navbar {
+    background-color: #ffffff;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 2px solid #e2e8ed;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #4a90e2;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #1c64d1;
+}
+
+
+.search-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.google-logo {
+    width: 240px;
+    margin-bottom: 25px;
+}
+
+
+.search-bar {
+    width: 60%;
+    max-width: 700px;
+    padding: 12px 18px;
+    border: 1px solid #d3d6db;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    background-color: #ffffff;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.search-bar:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 3px 8px rgba(74, 144, 226, 0.3);
+}
+
+
+.advanced-button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #4a90e2;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+.advanced-button:hover {
+    background-color: #3578d1;
+}
+
+.advanced-button:active {
+    background-color: #285aa8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* adv. search style */
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 700px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #555;
+    font-weight: 500;
+}
+
+.advanced-input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #d3d6db;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.advanced-input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 3px 6px rgba(74, 144, 226, 0.3);
+}
+

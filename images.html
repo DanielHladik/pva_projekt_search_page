@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Image Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <nav>
+            <a href="index.html" class="nav-link" aria-label="Back to Search">Zpátky k vyhledávání</a>
+        </nav>
+    </header>
+    <main class="search-section">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" 
+        alt="Google Logo" class="google-logo">
+        <form action="https://www.google.com/search" method="GET" aria-label="Image Search Form">
+            <input type="text" name="q" class="search-bar" placeholder="Vyhledat obrázky" aria-label="Image Search Input">
+            <input type="hidden" name="tbm" value="isch">
+            <button type="submit" class="advanced-button" aria-label="Search Images Button">Hledat Obrázky</button>
+        </form>
+    </main>
+</body>
+</html>
